@@ -1,29 +1,25 @@
 
-
-
-
-
 const randomMessage = age => {
     let d = new Date(); 
-     d.getHours(); 
-     d.getMonth(); 
+    let time = d.getHours(); 
+    let month = d.getMonth(); 
     let timeMessage = "";
     let monthMessage = "";
     let ageName = "";
-    
-if (d.getHours() > 0 && d.getHours() < 5){ timeMessage = 'Go to bed you'}
-else if (d.getHours() > 4 && d.getHours() < 9){ timeMessage = 'Time for breakfast'}
-else if (d.getHours() > 9 && d.getHours() < 12){ timeMessage = 'Second breakfast time'}
-else if (d.getHours() > 12 && d.getHours() < 15){ timeMessage = 'What about lunch'}
-else if (d.getHours() > 15 && d.getHours() < 17){ timeMessage = `It's definitely tea time`}
-else if (d.getHours() > 17 && d.getHours() < 20){ timeMessage = `I bet you can't wait until dinner`}
-else if (d.getHours() > 20 && d.getHours() < 24){ timeMessage = `You're going to dream about breakfast aren't you,`}
+
+if (time > 0 && time < 5){ timeMessage = 'Go to bed you'}
+else if (time > 4 && time < 9){ timeMessage = 'Time for breakfast'}
+else if (time > 9 && time < 12){ timeMessage = 'Second breakfast time'}
+else if (time > 12 && time < 15){ timeMessage = 'What about lunch'}
+else if (time > 15 && time < 17){ timeMessage = `It's definitely tea time`}
+else if (time > 17 && time < 20){ timeMessage = `I bet you can't wait until dinner`}
+else if (time > 20 && time < 24){ timeMessage = `You're going to dream about breakfast aren't you,`}
 else {return 'error, try again'};
 
-if (d.getMonth() === 1 || d.getMonth() === 2 || d.getMonth() === 12){monthMessage = "And what about a hot chocolate?"}
-else if (d.getMonth() > 2 && d.getMonth() < 6){monthMessage = "Longer days and shorter nights make you hungry!"}
-else if (d.getMonth() > 5 && d.getMonth() < 9){monthMessage = "Vegan BBQ tomorrow?"}
-else if (d.getMonth() > 8 && d.getMonth() < 12){monthMessage = "I love the leaves this time of year."}
+if (month === 1 || month === 2 || month === 12){monthMessage = "And what about a hot chocolate?"}
+else if (month > 2 && month < 6){monthMessage = "Longer days and shorter nights make you hungry!"}
+else if (month > 5 && month < 9){monthMessage = "Vegan BBQ tomorrow?"}
+else if (month > 8 && month < 12){monthMessage = "I love the leaves this time of year."}
 else {return 'error, try again'};
 
 if (age > 0 && age < 18){ageName = 'rizzler!'}
