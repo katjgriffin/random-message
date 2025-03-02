@@ -50,7 +50,14 @@ else if (d.getMonth() > 5 && d.getMonth() < 9){monthMessage = "Summer"}
 else if (d.getMonth() > 8 && d.getMonth() < 12){monthMessage = "Autumn"}
 else {return 'error, try again'};
 
-if (age)
+if (age > 0 && age < 18){ageName = 'rizzler'}
+else if (age > 18 && age < 22){ageName = 'cringelord'}
+else if (age > 22 && age < 34){ageName = 'bellend'}
+else if (age > 35 && age < 46){ageName = 'bae'}
+else if (age > 46 && age < 60){ageName = 'boomer'}
+else if (age > 60 && age < 80){ageName = 'whippersnapper'}
+else if (age > 80 && age < 130){ageName = 'square'}
+else {ageName = 'undead'}
 
 
 }
